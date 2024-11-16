@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0f] text-gray-100;
+  }
+}
+
+@layer components {
+  .cyber-gradient {
+    @apply bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600;
+  }
+  
+  .cyber-border {
+    @apply border border-cyan-500/30 shadow-lg shadow-cyan-500/20;
+  }
+  
+  .neon-text {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5),
+                 0 0 20px rgba(0, 255, 255, 0.3),
+                 0 0 30px rgba(0, 255, 255, 0.1);
+  }
+  
+  .glass-panel {
+    @apply bg-gray-900/40 backdrop-blur-xl;
+  }
+  
+  .key-highlight {
+    @apply bg-cyan-500/20 rounded px-1;
+  }
+}
