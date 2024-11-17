@@ -126,7 +126,18 @@ MIT License - feel free to use this project for learning or personal use.
 ## 👨‍💻 Author
 Created by Lakshmanan
 
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 🙏 Acknowledgments
-- Built with Claude AI in Windsurf VSCode
-- Cyberpunk design inspiration from modern tech trends
-- Community feedback and suggestions
+
+- Built with [Next.js](https://nextjs.org/)
+- Styled with [Tailwind CSS](https://tailwindcss.com/)
+- Animations by [Framer Motion](https://www.framer.com/motion/)
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
+- Developed using [Windsurf VSCode](https://www.windsurfai.com/) with Claude AI
+
+---
+Made with ❤️ by [geekylax](https://github.com/geekylax)
