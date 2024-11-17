@@ -1,29 +1,34 @@
 # TypeFlow - Modern Typing Practice App
 
-🚀 **Live Demo**: [Try TypeFlow](https://typing-practice-eeo0dqx27-geekylaxs-projects.vercel.app)
+A cyberpunk-themed typing practice application with real-time performance tracking and a sleek, responsive design.
 
-A sleek, cyberpunk-themed typing practice application built with Next.js and TypeScript. Practice your typing skills with a beautiful, responsive interface and real-time performance tracking.
+## 🌐 Live Demo
+Visit the app: [TypeFlow](https://83b1f495.typing-practice-89c.pages.dev)
 
-## ✨ Features
-
-- 🎯 Multiple difficulty levels (Easy, Medium, Hard)
-- 📊 Real-time WPM and accuracy tracking
-- 🌓 Dark mode optimized design
-- 🎨 Cyberpunk-inspired UI
-- ⚡ Smooth cursor animation
-- 📱 Responsive design
-- 🔄 Instant feedback
-- 🎮 Game-like experience
+## 🚀 Features
+- Real-time WPM (Words Per Minute) tracking
+- Accuracy statistics
+- Multiple difficulty levels
+- Cyberpunk-inspired UI with neon effects
+- Responsive design for all devices
+- Smooth cursor animations
+- Performance analytics
 
 ## 🛠️ Tech Stack
-
-- Next.js 13
+- Next.js 14
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - React Icons
 
-## 🚀 Quick Start
+## 🎨 Design
+- Dark cyberpunk theme (#0a0a0f)
+- Neon accents (Cyan: #00B8D9)
+- Glass morphism effects
+- Responsive layout
+- Custom animations
+
+## 🔧 Development Setup
 
 1. Clone the repository:
 ```bash
@@ -36,153 +41,84 @@ cd typing-practice
 npm install
 ```
 
-3. Run the development server:
+3. Run development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## 🎨 Development in Windsurf VSCode
-
-This project was developed using Windsurf VSCode with Claude AI. Here are the key prompts used to create this project from scratch:
-
-### 1. Initial Project Setup
-```
-Create a typing practice app with Next.js and TypeScript. Include:
-- Modern design
-- Real-time typing test
-- Performance tracking
-- Multiple difficulty levels
-```
-
-### 2. Core Typing Test Implementation
-```
-Implement a typing test component with:
-- Real-time character matching
-- WPM calculation
-- Accuracy tracking
-- Timer functionality
-- Different difficulty modes (Easy, Medium, Hard)
-```
-
-### 3. UI Design Evolution
-```
-Design a modern typing interface with:
-- Clean, readable text display
-- Smooth cursor animation
-- Visual feedback for correct/incorrect typing
-- Stats display (WPM, Accuracy, Time)
-```
-
-### 4. Cyberpunk Theme Implementation
-```
-Add cyberpunk theme with:
-- Dark background (#0a0a0f)
-- Neon accents and glowing effects
-- Gradient animations
-- Glass-panel components
-- Cyber-inspired typography
-```
-
-### 5. Animation and Interaction
-```
-Add smooth animations for:
-- Cursor movement
-- Character highlighting
-- Score updates
-- Completion effects
-- Hover states and transitions
-```
-
-### 6. Performance Optimization
-```
-Optimize the typing experience:
-- Smooth cursor tracking
-- Responsive text input
-- Efficient character matching
-- Clean state management
-```
-
-### 7. Mobile Responsiveness
-```
-Make the app responsive with:
-- Flexible layouts
-- Touch-friendly inputs
-- Adaptive typography
-- Mobile-optimized UI elements
-```
-
-### 8. Deployment Setup
-```
-Deploy the application:
-- Set up GitHub repository
-- Configure Vercel deployment
-- Add README documentation
-- Include setup instructions
-```
-
-### Key Style Properties Used
-```css
-/* Core Theme Colors */
-- Background: #0a0a0f
-- Text: cyan-400, gray-100
-- Accents: cyan-500, purple-600
-- Gradients: cyan → blue → purple
-
-/* Typography */
-- Font: Space Grotesk, Orbitron
-- Sizes: text-xl for typing, text-lg for UI
-
-/* Effects */
-- Glass Panel: bg-gray-900/40 backdrop-blur-xl
-- Neon: text-shadow with cyan glow
-- Borders: cyber-border with cyan glow
-```
-
-### Development Tips in Windsurf
-1. Use Claude AI for code generation and problem-solving
-2. Leverage real-time suggestions for TypeScript and Next.js
-3. Test changes instantly with hot reload
-4. Use version control for tracking changes
-5. Deploy directly from the editor
-
-## 🌐 Deployment
-
-The app is deployed on Vercel. To deploy your own instance:
-
-1. Push to GitHub:
+4. Build for production:
 ```bash
-git add .
-git commit -m "Your commit message"
-git push origin main
+npm run build
 ```
 
-2. Deploy with Vercel CLI:
+## 📦 Deployment
+
+### Cloudflare Pages Deployment
+The app is deployed on Cloudflare Pages. To deploy your own instance:
+
+1. Install Wrangler CLI:
 ```bash
-npm install -g vercel
-vercel --prod
+npm install -g wrangler
 ```
 
-## 🤝 Contributing
+2. Login to Cloudflare:
+```bash
+wrangler login
+```
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/YourFeature`
-3. Commit your changes: `git commit -m 'Add YourFeature'`
-4. Push to the branch: `git push origin feature/YourFeature`
-5. Open a pull request
+3. Build the project:
+```bash
+npm run build
+```
 
-## 📝 License
+4. Deploy to Cloudflare Pages:
+```bash
+wrangler pages deploy out --project-name typing-practice
+```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🤖 Development Process with AI
+
+This project was developed using Claude AI in Windsurf VSCode. Here are the key development prompts and steps used:
+
+### Initial Setup
+1. "Create a modern typing practice app with Next.js and TypeScript"
+2. "Add Tailwind CSS for styling"
+3. "Implement basic typing test functionality"
+
+### UI Development
+4. "Design a cyberpunk theme with neon effects"
+5. "Add glass morphism panels and gradient backgrounds"
+6. "Implement smooth cursor animations"
+
+### Features
+7. "Add real-time WPM calculation"
+8. "Implement accuracy tracking"
+9. "Create multiple difficulty levels"
+
+### Optimization
+10. "Optimize performance and bundle size"
+11. "Add responsive design for mobile devices"
+12. "Configure Cloudflare Pages deployment"
+
+## 📱 Responsive Design
+- Mobile-first approach
+- Adaptive layout for all screen sizes
+- Touch-friendly interface
+
+## 🔜 Future Improvements
+- User accounts and progress tracking
+- Custom practice texts
+- More detailed analytics
+- Keyboard heatmap
+- Multiplayer mode
+
+## 📄 License
+MIT License - feel free to use this project for learning or personal use.
+
+## 👨‍💻 Author
+Created by Lakshmanan
 
 ## 🙏 Acknowledgments
-
-- Built with [Next.js](https://nextjs.org/)
-- Styled with [Tailwind CSS](https://tailwindcss.com/)
-- Animations by [Framer Motion](https://www.framer.com/motion/)
-- Icons from [React Icons](https://react-icons.github.io/react-icons/)
-- Developed using [Windsurf VSCode](https://www.windsurfai.com/) with Claude AI
-
----
-Made with ❤️ by [geekylax](https://github.com/geekylax)
+- Built with Claude AI in Windsurf VSCode
+- Cyberpunk design inspiration from modern tech trends
+- Community feedback and suggestions
