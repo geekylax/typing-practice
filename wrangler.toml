@@ -1,0 +1,10 @@
+[build]
+command = "npm run build"
+pages_build_output_dir = "out"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[site]
+bucket = "out"
+entry-point = "."

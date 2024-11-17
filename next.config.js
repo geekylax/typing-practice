@@ -1,12 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  experimental: {
-    serverActions: true,
-  }
+  assetPrefix: '/',
+  basePath: '',
+  webpack: (config) => {
+    config.optimization = {
+      ...config.optimization,
+      minimize: true,
+    }
+    return config
+  },
+  reactStrictMode: true,
+  compress: true,
 }
 
 module.exports = nextConfig
