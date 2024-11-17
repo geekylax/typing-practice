@@ -51,11 +51,17 @@ npm run dev
 npm run build
 ```
 
-## 📦 Deployment
+## 🌐 Deployment
 
-### Cloudflare Pages Deployment
-The app is deployed on Cloudflare Pages. To deploy your own instance:
+The app is now deployed on Cloudflare Pages (previously on Vercel). Here are both deployment options:
 
+### Vercel Deployment (Previous)
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+### Cloudflare Pages Deployment (Current)
 1. Install Wrangler CLI:
 ```bash
 npm install -g wrangler
@@ -75,6 +81,8 @@ npm run build
 ```bash
 wrangler pages deploy out --project-name typing-practice
 ```
+
+Note: The app is now live at [TypeFlow](https://83b1f495.typing-practice-89c.pages.dev)
 
 ## 🤖 Development Process with AI
 
